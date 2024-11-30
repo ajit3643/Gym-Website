@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Registration Form</title>
+  <link rel="stylesheet" href="./membership.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Gym Registration Form</h2>
+    <form action="#" method="post">
+      
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="horizontal">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+          </div>
+
+          <!-- Age -->
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <div class="horizontal">
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+      </fieldset>
+
+      <!-- Gym Details -->
+      <fieldset>
+        <legend>Gym Details</legend>
+        <div class="horizontal">
+          <!-- Preferred Package -->
+          <div class="form-group">
+            <label for="package">Preferred Package</label>
+            <select id="package" name="package" required>
+              <option value="" disabled selected>Select your package</option>
+              <option value="monthly">Monthly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+          </div>
+
+          <!-- Emergency Contact -->
+          <div class="form-group">
+            <label for="emergency_contact">Emergency Contact</label>
+            <input type="tel" id="emergency_contact" name="emergency_contact" placeholder="Enter emergency contact number" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
